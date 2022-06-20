@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: #2f3437;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <title>Notion Widget Embed Template</title>
+  </head>
+  <body>
+    <div class="miniGraphiQL">
+      <div class="hasVariables">
+        <div class="query-editor">
+          <div class="CodeMirror cm-s-graphiql" translate="no">
+            <div
+              style="
+                overflow: hidden;
+                position: relative;
+                width: 3px;
+                height: 0px;
+                top: 38px;
+                left: 4px;
+              "
+            >
+              <textarea
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                style="
+                  position: absolute;
+                  bottom: -1em;
+                  padding: 0px;
+                  width: 1000px;
+                  height: 1em;
+                  min-height: 1em;
+                  outline: none;
+                "
+                tabindex="0"
+              ></textarea>
+            </div>
+            <div
+              class="CodeMirror-vscrollbar"
+              tabindex="-1"
+              cm-not-content="true"
+              style="
+                display: block;
+                bottom: 0px;
+                width: 18px;
+                pointer-events: none;
+              "
+            >
+              <div style="min-width: 1px; height: 164px"></div>
+            </div>
+            <div
+              class="CodeMirror-hscrollbar"
+              tabindex="-1"
+              cm-not-content="true"
+              style="
+                display: block;
+                right: 0px;
+                left: 0px;
+                height: 18px;
+                pointer-events: none;
+              "
+            >
+              <div style="height: 100%; min-height: 1px; width: 378px"></div>
+            </div>
+            <div
+              class="CodeMirror-scrollbar-filler"
+              cm-not-content="true"
+            ></div>
+            <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+            <div class="CodeMirror-scroll" tabindex="-1">
+              <div
+                class="CodeMirror-sizer"
+                style="
+                  margin-left: 0px;
+                  margin-bottom: 0px;
+                  border-right-width: 50px;
+                  min-height: 144px;
+                  min-width: 358.094px;
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+                "
+              >
+                <div style="position: relative; top: 0px">
+                  <div class="CodeMirror-lines" role="presentation">
+                    <div
+                      role="presentation"
+                      style="position: relative; outline: none"
+                    >
+                      <div class="CodeMirror-measure"></div>
+                      <div class="CodeMirror-measure"></div>
+                      <div style="position: relative; z-index: 1"></div>
+                      <div
+                        class="CodeMirror-cursors"
+                        style="visibility: hidden"
+                      >
+                        <div
+                          class="CodeMirror-cursor"
+                          style="left: 4px; top: 34px; height: 17px"
+                        >
+                          &nbsp;
+                        </div>
+                      </div>
+                      <div class="CodeMirror-code" role="presentation" style="">
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">query</span><span class="cm-ws"> </span><span class="cm-def">HeroNameAndFriends</span><span class="cm-punctuation">(</span><span class="cm-variable">$episode</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-atom">Episode</span><span class="cm-punctuation">)</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">  </span><span class="cm-property">hero</span><span class="cm-punctuation">(</span><span class="cm-attribute">episode</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-variable">$episode</span><span class="cm-punctuation">)</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">    </span><span class="cm-property">name</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">    </span><span class="cm-property">friends</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">      </span><span class="cm-property">name</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">    </span><span class="cm-punctuation">}</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">  </span><span class="cm-punctuation">}</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">}</span></span></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 50px;
+                  width: 1px;
+                  border-bottom: 0px solid transparent;
+                  top: 144px;
+                "
+              ></div>
+              <div
+                class="CodeMirror-gutters"
+                style="display: none; height: 194px"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="variable-editor">
+          <div class="CodeMirror cm-s-graphiql" translate="no">
+            <div
+              style="
+                overflow: hidden;
+                position: relative;
+                width: 3px;
+                height: 0px;
+                top: 4px;
+                left: 11.8047px;
+              "
+            >
+              <textarea
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                style="
+                  position: absolute;
+                  bottom: -1em;
+                  padding: 0px;
+                  width: 1000px;
+                  height: 1em;
+                  min-height: 1em;
+                  outline: none;
+                "
+                tabindex="0"
+              ></textarea>
+            </div>
+            <div
+              class="CodeMirror-vscrollbar"
+              tabindex="-1"
+              cm-not-content="true"
+              style="
+                display: block;
+                bottom: 0px;
+                width: 18px;
+                pointer-events: none;
+              "
+            >
+              <div style="min-width: 1px; height: 79px"></div>
+            </div>
+            <div
+              class="CodeMirror-hscrollbar"
+              tabindex="-1"
+              cm-not-content="true"
+              style="height: 18px; pointer-events: none"
+            >
+              <div style="height: 100%; min-height: 1px; width: 0px"></div>
+            </div>
+            <div
+              class="CodeMirror-scrollbar-filler"
+              cm-not-content="true"
+            ></div>
+            <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+            <div class="CodeMirror-scroll" tabindex="-1">
+              <div
+                class="CodeMirror-sizer"
+                style="
+                  margin-left: 0px;
+                  margin-bottom: 0px;
+                  border-right-width: 50px;
+                  min-height: 59px;
+                  min-width: 155.25px;
+                  padding-right: 0px;
+                  padding-bottom: 0px;
+                "
+              >
+                <div style="position: relative; top: 0px">
+                  <div class="CodeMirror-lines" role="presentation">
+                    <div
+                      role="presentation"
+                      style="position: relative; outline: none"
+                    >
+                      <div class="CodeMirror-measure">
+                        <pre class="CodeMirror-line-like">x</pre>
+                      </div>
+                      <div class="CodeMirror-measure"></div>
+                      <div style="position: relative; z-index: 1">
+                        <div
+                          class="CodeMirror-selected"
+                          style="
+                            position: absolute;
+                            left: 11.8047px;
+                            top: 0px;
+                            width: 246.195px;
+                            height: 17px;
+                          "
+                        ></div>
+                        <div
+                          class="CodeMirror-selected"
+                          style="
+                            position: absolute;
+                            left: 4px;
+                            top: 17px;
+                            width: 140.445px;
+                            height: 17px;
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        class="CodeMirror-cursors"
+                        style="visibility: hidden"
+                      >
+                        <div
+                          class="CodeMirror-cursor"
+                          style="left: 11.8047px; top: 0px; height: 17px"
+                        >
+                          &nbsp;
+                        </div>
+                      </div>
+                      <div class="CodeMirror-code" role="presentation">
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">{</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">  </span><span class="cm-variable">"episode"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"JEDI"</span></span></pre>
+                        <pre
+                          class="CodeMirror-line"
+                          role="presentation"
+                        ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">}</span></span></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 50px;
+                  width: 1px;
+                  border-bottom: 0px solid transparent;
+                  top: 59px;
+                "
+              ></div>
+              <div
+                class="CodeMirror-gutters"
+                style="display: none; height: 109px"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result-window">
+        <div class="CodeMirror cm-s-graphiql" translate="no">
+          <div
+            style="
+              overflow: hidden;
+              position: relative;
+              width: 3px;
+              height: 0px;
+              top: 171px;
+              left: 74.2188px;
+            "
+          >
+            <textarea
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+              style="
+                position: absolute;
+                bottom: -1em;
+                padding: 0px;
+                width: 1000px;
+                height: 1em;
+                min-height: 1em;
+                outline: none;
+              "
+              readonly=""
+              tabindex="0"
+            ></textarea>
+          </div>
+          <div
+            class="CodeMirror-vscrollbar"
+            tabindex="-1"
+            cm-not-content="true"
+            style="
+              width: 18px;
+              pointer-events: none;
+              display: block;
+              bottom: 0px;
+            "
+          >
+            <div style="min-width: 1px; height: 334px"></div>
+          </div>
+          <div
+            class="CodeMirror-hscrollbar"
+            tabindex="-1"
+            cm-not-content="true"
+            style="
+              height: 18px;
+              pointer-events: none;
+              display: block;
+              right: 0px;
+              left: 0px;
+            "
+          >
+            <div style="height: 100%; min-height: 1px; width: 292px"></div>
+          </div>
+          <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+          <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+          <div class="CodeMirror-scroll" tabindex="-1">
+            <div
+              class="CodeMirror-sizer"
+              style="
+                margin-left: 0px;
+                margin-bottom: 0px;
+                border-right-width: 50px;
+                min-height: 314px;
+                min-width: 272.258px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+              "
+            >
+              <div style="position: relative; top: 0px">
+                <div class="CodeMirror-lines" role="presentation">
+                  <div
+                    role="presentation"
+                    style="position: relative; outline: none"
+                  >
+                    <div class="CodeMirror-measure">
+                      <pre
+                        class="CodeMirror-line-like"
+                      ><span>xxxxxxxxxx</span></pre>
+                    </div>
+                    <div class="CodeMirror-measure"></div>
+                    <div style="position: relative; z-index: 1"></div>
+                    <div class="CodeMirror-cursors" style="">
+                      <div
+                        class="CodeMirror-cursor"
+                        style="left: 74.2188px; top: 221px; height: 17px"
+                      >
+                        &nbsp;
+                      </div>
+                    </div>
+                    <div class="CodeMirror-code" role="presentation" style="">
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">{</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">  </span><span class="cm-def">"data"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">    </span><span class="cm-property">"hero"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">{</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">      </span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"R2-D2"</span><span class="cm-punctuation">,</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">      </span><span class="cm-property">"friends"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-punctuation">[</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">        </span><span class="cm-punctuation">{</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">          </span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Luke Skywalker"</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">        </span><span class="cm-punctuation">},</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">        </span><span class="cm-punctuation">{</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">          </span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Han Solo"</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">        </span><span class="cm-punctuation">},</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">        </span><span class="cm-punctuation">{</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">          </span><span class="cm-property">"name"</span><span class="cm-punctuation">:</span><span class="cm-ws"> </span><span class="cm-string">"Leia Organa"</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">        </span><span class="cm-punctuation">}</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">      </span><span class="cm-punctuation">]</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">    </span><span class="cm-punctuation">}</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-ws">  </span><span class="cm-punctuation">}</span></span></pre>
+                      <pre
+                        class="CodeMirror-line"
+                        role="presentation"
+                      ><span role="presentation" style="padding-right: 0.1px;"><span class="cm-punctuation">}</span></span></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                position: absolute;
+                height: 50px;
+                width: 1px;
+                border-bottom: 0px solid transparent;
+                top: 314px;
+              "
+            ></div>
+            <div
+              class="CodeMirror-gutters"
+              style="display: none; height: 364px"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
